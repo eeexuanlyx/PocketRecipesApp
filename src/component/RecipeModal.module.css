@@ -1,0 +1,99 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+  position: fixed;
+  background: white;
+  top: 10vh;
+  bottom: 10vh;
+  max-height: 100%;
+  left: 10%;
+  width: 80%;
+  z-index: 100;
+  overflow-y: auto;
+  padding: 20px;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+}
+
+.image {
+  max-width: 90%;
+  padding: 10px;
+  height: auto;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonGap {
+  display: flex;
+  gap: 20px;
+}
+
+.miscs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.miscs2 {
+  align-self: flex-start;
+}
+
+.recipeTop {
+  display: flex;
+  flex-direction: row;
+}
+
+.favButton {
+  background-color: var(--label-by);
+  color: whitesmoke;
+}
+
+.favButton:hover {
+  background-color: #cd0836cb;
+}
+
+.favButton:disabled {
+  background-color: #c2304dca;
+  color: whitesmoke;
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .modal {
+    font-size: 18px;
+  }
+
+  .recipeTop {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    font-size: 16px;
+  }
+
+  .recipeTop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttonGap {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}

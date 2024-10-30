@@ -1,0 +1,49 @@
+.searchContainer {
+  background-color: rgba(255, 255, 255, 0.938);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin: 50px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.recipeSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 767px) {
+  .recipeSearch {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipeSearch {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+  .searchContainer {
+    margin: 20px;
+  }
+}
+
+.rs {
+  font-family: "Caveat Brush", sans-serif;
+  font-size: 1.3em;
+  color: var(--text);
+}
+
+.rs2 {
+  font-family: "Caveat Brush", sans-serif;
+  font-size: 1.2em;
+  color: var(--text);
+}
+
+.submitInfo {
+  display: flex;
+  flex-direction: column;
+}
