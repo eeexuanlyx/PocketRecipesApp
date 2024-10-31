@@ -6,7 +6,7 @@
 
 ## Background Info
 
-**This is the Local Storage Version of my original repository. In this version, saved recipes will be in your local storage browser.**
+**This is the Local Storage Version of my original repository [Pocket Recipes](https://github.com/eeexuanlyx/pocket-recipes) . In this version, saved recipes will be in your local storage browser.**
 
 _Pocket Recipes_ is designed to allows users to search for recipes on the go, even on their tablets and mobile phones. They can even toggle to search by ingredients, where they can input whatever ingredients they would like to have in the recipe. Users may also save the recipes to their favourites for their convenience.
 
@@ -29,7 +29,7 @@ _Pocket Recipes_ is designed to allows users to search for recipes on the go, ev
    `<your-username>` should be your github username.
 
 ```
-git clone https://github.com/<your-username>/pocket-recipes.git
+git clone https://github.com/<your-username>/PocketRecipesApp.git
 ```
 
 3. cd to your new cloned directory:
