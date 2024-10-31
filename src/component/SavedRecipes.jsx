@@ -49,6 +49,7 @@ const SavedRecipes = () => {
     localStorage.setItem("favouritedRecipes", JSON.stringify(updatedRecipes));
     setSelection("");
     navigate("/saved-recipes");
+    window.location.reload();
   };
 
   return (
