@@ -77,9 +77,16 @@ const OverLay = (props) => {
 
   // Save new recipe to localStorage
   const addRecipe = (newRecipe) => {
-    const updatedRecipes = [...favouritedRecipes, newRecipe];
-    setFavouritedRecipes(updatedRecipes);
-    localStorage.setItem("favouritedRecipes", JSON.stringify(updatedRecipes));
+    const recipeWithTimestamp = {
+      ...newRecipe,
+      timestamp: new Date().getTime(),
+    };
+    const updatedRecipes = [...favouritedRecipes, recipeWithTimestamp];
+    const sortedRecipes = updatedRecipes.sort(
+      (a, b) => b.timestamp - a.timestamp
+    );
+    setFavouritedRecipes(sortedRecipes);
+    localStorage.setItem("favouritedRecipes", JSON.stringify(sortedRecipes));
   };
 
   // Retrieve saved recipes from localStorage on component mount
